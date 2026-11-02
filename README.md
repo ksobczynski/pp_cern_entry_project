@@ -130,19 +130,6 @@ Dla 8 kategorii cząstek tworzy po 4 histogramy (razem 32) i zapisuje je do `ana
 - każdy wykres zapisany jako PNG (`plots/png/`) i PDF (`plots/pdf/`),
   wszystkie razem w `plots/all_plots.pdf`.
 
-## Uwagi
-
-**φ złożone do zakresu 0–π przez |φ|.** Pythia zwraca φ ∈ (−π, π], a specyfikacja
-wymaga histogramu 0–π. Użyto złożenia |φ|, które nie zmienia kształtu rozkładu.
-
-**„Mean” w ramce statystyk `hN_all` jest zaniżony.** Zakres 0–400 jest za mały dla
-kategorii `all` (zawiera też fotony): 12.5% zderzeń ma ponad 400 cząstek stanu
-końcowego i trafia do binu overflow. ROOT liczy średnią bez overflow, więc ramka
-pokazuje ~145, a prawdziwa średnia to ⟨N_all⟩ ≈ 192. Dla `ch` overflow wynosi
-0.1% (ramka 91.4, prawdziwa średnia 91.7), dla π, K i p jest zerowy, więc tam
-„Mean” jest dokładny.
-
-
 ## Odtwarzalność
 
 Te same wersje pakietów (ROOT 6.40.02, Pythia 8.312) i ten sam seed dają te same
