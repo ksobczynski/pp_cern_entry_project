@@ -1,0 +1,7 @@
+name: pp
+channels:
+  - conda-forge
+dependencies:
+  - root=6.40.02
+  - pythia8=8.312
+  - make
