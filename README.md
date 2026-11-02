@@ -70,15 +70,13 @@ Makro przyjmuje też argumenty: `root -l -b -q 'draw_plots.C("analysis.root","pl
 ├── draw_plots.C              # makro ROOT: analysis.root → plots/
 ├── Makefile                  # kompilacja i cały łańcuch (make run)
 ├── environment.yml           # środowisko conda (ROOT, Pythia, make)
-├── analysis.root             # wynik analizy (w repo)
-├── plots/                    # wykresy (w repo)
-│   ├── png/
-│   ├── pdf/
-│   └── all_plots.pdf
-└── presentation/             # prezentacja (Beamer)
-    ├── main.tex
-    ├── main.pdf              # prezentacja ze wszystkimi wykresami
-    └── figures/              # kopie wykresów z plots/pdf/
+├── analysis.root             # wynik analizy
+├── presentation.pdf          # prezentacja ze wszystkimi wykresami
+├── README.md
+└── plots/                    # wykresy
+    ├── png/
+    ├── pdf/
+    └── all_plots.pdf
 ```
 
 ## Co robi każdy etap
